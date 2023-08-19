@@ -1,14 +1,14 @@
 let numberID = prompt('please enter your numberID');
 alert("your numberID is" + " " + numberID);
-
-for ( i = 0; i < numberID; i+= 2 ){
-    console.log(i);   
-}
+let evenNumber = (numberID/2) + 1;
+console.log(evenNumber);  
 
 
 
-const fullName = prompt ('please enter your name');
+const firstName = prompt ('please enter your firstname');
+const lastName = prompt ('please enter your lastName');
+const fullName = firstName + " " + lastName;
 alert("your name is" + " " + fullName);
 
-nameLength = fullName.length;
-console.log(nameLength);
+const fullNameWithoutSpace = fullName.split(" ").join('');
+console.log(fullNameWithoutSpace.length);
