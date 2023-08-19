@@ -1,7 +1,8 @@
 let numberID = prompt('please enter your numberID');
 alert("your numberID is" + " " + numberID);
-let evenNumber = (numberID/2) + 1;
-console.log(evenNumber);  
+let evenNumber = (numberID/2) + 1 ;
+result = parseInt(evenNumber);
+console.log(result);  
 
 
 
