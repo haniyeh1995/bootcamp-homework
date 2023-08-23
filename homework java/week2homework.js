@@ -21,7 +21,7 @@ console.log(prime(n));
 
 // 2
 const userName = prompt('please enter your name');
-const getUserName = userName.split('').reverse('');
+const getUserName = userName.split('').reverse('').join('');
 console.log(getUserName);
 
 
@@ -66,17 +66,13 @@ console.log(result);
 
 
 // 5
-let number = prompt("please enter your number");
-let toObjectNumber = number.split('');
-console.log(toObjectNumber);
-deleteItems= toObjectNumber.slice(1,-1).join(' ');
+let number = [1,2,3,4,5,6];
+console.log(number);
 
-let deleteItems;
-if(toObjectNumber.length <=2){
+if(number.length <=2){
     console.log(null);
-
 }else{
-    deleteItems= toObjectNumber.slice(1,-1).join(' ');
+    deleteItems= number.slice(1,-1).join(' ');
 }
 console.log(deleteItems);
 
