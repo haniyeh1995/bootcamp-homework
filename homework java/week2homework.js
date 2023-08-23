@@ -66,14 +66,13 @@ console.log(result);
 
 
 // 5
-let number = [1,2,3,4,5,6];
-let toStringNumber = number.toString('');
-console.log(toStringNumber);
-
-if(number.length <=2){
-    console.log(null);
+const number = "1,2,3,4,5"
+const toArrNumber = number.split(",");
+let deleteItems;
+if(toArrNumber.length <=2){
+console.log(null);
 }else{
-    deleteItems= number.slice(1,-1).join(' ');
+deleteItems= toArrNumber.slice(1,-1).join(' ');
 }
 console.log(deleteItems);
 
