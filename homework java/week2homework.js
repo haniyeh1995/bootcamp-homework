@@ -67,7 +67,8 @@ console.log(result);
 
 // 5
 let number = [1,2,3,4,5,6];
-console.log(number);
+let toStringNumber = number.toString('');
+console.log(toStringNumber);
 
 if(number.length <=2){
     console.log(null);
