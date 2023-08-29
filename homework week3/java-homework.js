@@ -124,7 +124,7 @@ function calculateFibonacci(number) {
 const userText = prompt('please enter your text with dash');
 
 function toCamelCase(str) {
-    let words = str.split(/[\s_]+|(?=[A-Z])/).join("-");
+    let words = str.split(/[-_]/);
     let result = "";
   
     for (let i = 0; i < words.length; i++) {
