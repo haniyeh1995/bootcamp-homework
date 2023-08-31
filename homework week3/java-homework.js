@@ -157,7 +157,7 @@ function isNarcissisticNumber(number) {
       
     };
 
-    return sum === number;
+    return sum == number;
   };
   
   console.log(isNarcissisticNumber(userNumber)); 
