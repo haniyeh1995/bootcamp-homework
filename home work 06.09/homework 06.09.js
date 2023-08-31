@@ -7,46 +7,11 @@ while(quitEnter != true){
 
     }else{
         Arr.push(userOpinion);
-
     }
 }
-console.log(Arr);
 
 
-
-// function likeOrDislike(buttons) {
-//     let like = false;
-//     let dislike = false;
-  
-//     for (let i = 0; i < buttons.length; i++) {
-//       if (buttons[i] === 'Like') {
-//         like = !dislike;
-//         dislike = false;
-//       } else if (buttons[i] === 'Dislike') {
-//         dislike = !like;
-//         like = false;
-//       }
-//     }
-  
-//     if (like && !dislike) {
-//       return 'Like';
-//     } else if (!like && dislike) {
-//       return 'Dislike';
-//     } else {
-//       return 'Nothing';
-//     }
-//   }
-
-//   console.log(likeOrDislike(Arr));
-// if (Arr.length > 0) {
-//     console.log(likeOrDislike(Arr)); 
-//   } else {
-//     console.log('Nothing');
-//   }
-
-
-
-  function likeOrDislike(buttons) {
+function likeOrDislike(buttons) {
     let answer = 'Nothing';
   
     for (let i = 0; i < buttons.length; i++) {
@@ -69,28 +34,4 @@ console.log(Arr);
 
 
 
-// function likeOrDislike(buttons) {
-//     let like = false;
-//     let dislike = false;
-    
-//     for (let i = buttons.length - 1; i >= 0; i--) {
-//       if (buttons[i] === 'Like') {
-//         like = !dislike;
-//         dislike = false;
-//       } else if (buttons[i] === 'Dislike') {
-//         dislike = !like;
-//         like = false;
-//       }
-//     }
-    
-//     if (like) {
-//       return 'Like';
-//     } else if (dislike) {
-//       return 'Dislike';
-//     } else {
-//       return 'Nothing';
-//     }
-//   }
-  
-//   console.log(likeOrDislike(Arr));
 
