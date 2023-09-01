@@ -12,7 +12,7 @@ while(quitEnter != true){
 
 
 function likeOrDislike(buttons) {
-    let answer = 'Nothing';
+    let answer = 'nothing';
   const rull= {
       'nothing':  {
           like: "like",
@@ -31,16 +31,11 @@ function likeOrDislike(buttons) {
   };
 
     for (let i = 0; i < buttons.length; i++) {
-      if (buttons[i] !== 'Nothing') {
-        answer =rull.answer.buttons[i]
-   
-    }    
-     return answer;
+      answer = rull[answer][buttons[i]];
+      
   }
+  return answer;
+}
 
 
   console.log(likeOrDislike(Arr));
-
-
-
-
