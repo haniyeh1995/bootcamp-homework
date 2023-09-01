@@ -14,17 +14,22 @@ while(quitEnter != true){
 function likeOrDislike(buttons) {
     let answer = 'Nothing';
   const rull= {
-      'nothing': "  {
-          like like
-      dislike dislike
-    ,
-          like  :  {
-          like  nothing
-          dislike dislike
-          }
-      
-      }
+      'nothing':  {
+          like: "like",
+      dislike: "dislike",
   }
+    ,
+          'like'  :  {
+          like:  'nothing',
+          dislike: 'dislike',
+          }
+    ,
+    'dislike' : {
+        dislike: 'nothing',
+        like: 'like',
+      }
+  };
+
     for (let i = 0; i < buttons.length; i++) {
       if (buttons[i] !== 'Nothing') {
         answer =rull.answer.buttons[i]
