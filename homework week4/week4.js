@@ -3,18 +3,15 @@ let userText = prompt ('Please enter your text');
 function removeVowels(text) {
     let result = '';
     let vowels = ['a','e','o','u','i','A', 'E', 'I', 'O', 'U'];
-
     for (let i = 0; i < text.length; i++) {
-    
         if (!vowels.includes(text[i])) {
-            result += text[i];
-            
+            result += text[i];   
         }
     }
-
     return result;
 };
 console.log(removeVowels(userText));
+
 
 // 2
 const arr = [];
@@ -27,7 +24,6 @@ while(!quitEnter){
         arr.push(userOpinion);
     }
 };
-
 function likeThis(names) {
     if (names.length === 0) {
       return 'Nobody likes this.';
@@ -41,13 +37,12 @@ function likeThis(names) {
   }
 console.log(likeThis(arr));
 
+
 // 3
 const Number1 = prompt('please enter your first series of numbers and split them with comma');
 const arrayNumber1 = Number1.split(",");
 const Number2 = prompt('please enter your second series of numbers and split them with comma');
 const arrayNumber2 = Number2.split(",");
-console.log(arrayNumber1);
-console.log(arrayNumber2);
 
 function findArrayDifference(array1, array2) {
     let difference = [];
@@ -61,9 +56,9 @@ function findArrayDifference(array1, array2) {
 }
 console.log(findArrayDifference(arrayNumber1,arrayNumber2));
 
+
 // 4
 const userText = prompt('please enter your text');
-
 function countDuplicate(input) {
     let characterCounts = {};
     let duplicatesCount = 0;
