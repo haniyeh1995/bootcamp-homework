@@ -38,4 +38,4 @@ function likeOrDislike(buttons) {
 }
 
 
-  console.log(likeOrDislike(Arr));
+  console.log(likeOrDislike(arr));
