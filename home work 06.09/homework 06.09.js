@@ -1,6 +1,6 @@
 const arr = [];
 let quitEnter = false;
-while(quitEnter != true){
+while(!quitEnter){
     const userOpinion = prompt('please enter your opinion and then type quit')
         if(userOpinion === 'quit'){
         quitEnter = true;
