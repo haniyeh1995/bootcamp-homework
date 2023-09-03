@@ -1,4 +1,4 @@
-Arr = [];
+arr = [];
 let quitEnter = false;
 while(quitEnter != true){
     const userOpinion = prompt('please enter your opinion and then type quit')
@@ -6,7 +6,7 @@ while(quitEnter != true){
         quitEnter = true;
 
     }else{
-        Arr.push(userOpinion);
+        arr.push(userOpinion);
     }
 }
 
