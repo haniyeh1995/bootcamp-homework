@@ -1,5 +1,5 @@
 const enterNumber = prompt('please enter your series of number');
-const ArrOfNmber = enterNumber.split('');
+const arrOfNmber = enterNumber.split('');
 console.log(enterNumber)
 // console.log(ArrOfNmber); 
 
