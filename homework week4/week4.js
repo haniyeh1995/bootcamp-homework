@@ -1,13 +1,12 @@
 // 1
 let userText = prompt ('Please enter your text');
 function removeVowels(text) {
-    let result = '';
+    let result = text;
     let vowels = ['a','e','o','u','i','A', 'E', 'I', 'O', 'U'];
-    for (let i = 0; i < text.length; i++) {
-        if (!vowels.includes(text[i])) {
-            result += text[i];   
-        }
-    }
+    
+    result = result.split("").filter(
+        (value => !vowels.includes(value))).join("")
+
     return result;
 };
 console.log(removeVowels(userText));
@@ -45,13 +44,10 @@ const Number2 = prompt('please enter your second series of numbers and split the
 const arrayNumber2 = Number2.split(",");
 
 function findArrayDifference(array1, array2) {
-    let difference = [];
-    
-    for (let i = 0; i < array1.length; i++) {
-      if (!array2.includes(array1[i])) {
-        difference.push(array1[i]);
-      }
-    }
+    let difference = array1;
+    difference=difference.filter(
+        (value =>!array2.includes(value)) 
+    )
     return difference
 }
 console.log(findArrayDifference(arrayNumber1,arrayNumber2));
