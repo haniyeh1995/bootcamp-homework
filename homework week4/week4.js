@@ -58,7 +58,7 @@ console.log(findArrayDifference(arrayNumber1,arrayNumber2));
 
 
 // 4
-const userText = prompt('please enter your text');
+const TextByUser = prompt('please enter your text');
 function countDuplicate(input) {
     let characterCounts = {};
     let duplicatesCount = 0;
@@ -76,5 +76,5 @@ function countDuplicate(input) {
     return duplicatesCount;
   }
   
-  console.log(countDuplicate(userText));
+  console.log(countDuplicate(TextByUser));
   
