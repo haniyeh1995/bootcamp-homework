@@ -1,9 +1,9 @@
 // 1
 let userText = prompt ('Please enter your text');
+
+let vowels = ['a','e','o','u','i','A', 'E', 'I', 'O', 'U'];
 function removeVowels(text) {
     let result = text;
-    let vowels = ['a','e','o','u','i','A', 'E', 'I', 'O', 'U'];
-    
     result = result.split("").filter(
         (value => !vowels.includes(value))).join("")
 
