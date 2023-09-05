@@ -44,12 +44,22 @@ const Number2 = prompt('please enter your second series of numbers and split the
 const arrayNumber2 = Number2.split(",");
 
 function findArrayDifference(array1, array2) {
-    let difference = array1;
-    difference=difference.filter(
-        (value =>!array2.includes(value)) 
-    )
-    return difference
-}
+    let difference = [];
+    
+    for (let i = 0; i < array1.length; i++) {
+      if (!array2.includes(array1[i])) {
+        difference.push(array1[i]);
+      }
+    }
+    
+    for (let j = 0; j < array2.length; j++) {
+      if (!array1.includes(array2[j])) {
+        difference.push(array2[j]);
+      }
+    }
+    
+    return difference;
+  }
 console.log(findArrayDifference(arrayNumber1,arrayNumber2));
 
 
