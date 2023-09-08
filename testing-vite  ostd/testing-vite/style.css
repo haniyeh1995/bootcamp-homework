@@ -1,0 +1,23 @@
+.input-box {
+    display: flex;
+    align-items: stretch;
+    gap: 1rem;
+    width: 50%;
+    font-size: 2rem;
+}
+
+.input-box input {
+    flex-grow: 1;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.input-box button {
+    font-size: 2rem;
+}
+
+.username {
+    font-size: 3rem;
+    font-weight: bold;
+    color: green;
+}
