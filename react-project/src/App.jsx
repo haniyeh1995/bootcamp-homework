@@ -66,7 +66,7 @@ function App() {
   
   return (
     <>
-      <div>{final}</div>    
+      <div id='final'>{final}</div>    
       <div>
       <input className='first' value={firstNumb} placeholder='number1' onChange={first}/>
       <input className='second' value={secNumb} placeholder='number2' onChange={second}/>
