@@ -24,9 +24,9 @@ function formatTimes(second){
     if(second > 359999){
         return "Invalid input. Maximum time exceeded.";
     }
-    var hours = Math.floor(second / 3600);
-    var minutes = Math.floor((second / 60) % 60);
-    var sec = second % 60;
+    let hours = Math.floor(second / 3600);
+    let minutes = Math.floor((second / 60) % 60);
+    let sec = second % 60;
   
     return (
       ("0" + hours).slice(-2) +
@@ -51,9 +51,9 @@ function rgb(r, g, b) {
     g = Math.max(0, Math.min(255, g));
     b = Math.max(0, Math.min(255, b));
   
-    var hex_r = (r.toString(16).padStart(2, '0').toUpperCase());
-    var hex_g = (g.toString(16).padStart(2, '0').toUpperCase());
-    var hex_b = (b.toString(16).padStart(2, '0').toUpperCase());
+    let hex_r = (r.toString(16).padStart(2, '0').toUpperCase());
+    let hex_g = (g.toString(16).padStart(2, '0').toUpperCase());
+    let hex_b = (b.toString(16).padStart(2, '0').toUpperCase());
   
     return hex_r + hex_g + hex_b;
   }
