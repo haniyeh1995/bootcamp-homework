@@ -10,30 +10,35 @@ function App() {
 
   const conversionRates = {
     USD: {
+      USD: 1,
       EUR: 0.93,
       IRR: 42000,
       AED: 3.67,
       CNH: 7.28,
     },
     EUR: {
+      EUR: 1,
       USD: 1.07,
       IRR: 45000,
       AED: 3.94,
       CNH: 7.79,
     },
     IRR: {
+      IRR:1,
       USD: 0.00002,
       EUR: 0.00002,
       AED: 0.00008,
       CNH: 0.00017,
     },
     AED: {
+      AED: 1,
       USD: 0.27,
       EUR: 0.25,
       IRR: 11511,
       CNH: 1.98,
     },
     CNH: {
+      CHN: 1,
       USD: 0.13,
       EUR: 0.12,
       IRR: 5814,
@@ -91,7 +96,6 @@ function App() {
           <option value="EUR">EUR</option>
           <option value="USD">USD</option>
           <option value="IRR">IRR</option>
-          <option value="CAD">CAD</option>
           <option value="AED">AED</option>
           <option value="CNH">CNH</option>
         </select>
