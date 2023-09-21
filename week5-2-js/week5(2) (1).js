@@ -88,6 +88,7 @@ console.log(formatDuration(time));
 
 // 4
 const userNumber = prompt('please enter your number with comma');
+const givenNumber= userNumber.split(",")
 
 function findMaxSumSubarray(arr) {
   if (arr.length === 0) return 0; 
@@ -111,6 +112,6 @@ function findMaxSumSubarray(arr) {
   return maxSum;
 }
 
-  console.log(maxSubarraySum(+userNumber));
+  console.log(maxSubarraySum(+givenNumber));
 
   
