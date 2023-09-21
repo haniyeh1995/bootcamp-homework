@@ -8,8 +8,8 @@ function validateISBN10(isbn) {
     }
 
     var sum = 0;
-    for (var i = 0; i < 10; i++) {
-      var digit = isbn[i];
+    for (let i = 0; i < 10; i++) {
+      let digit = isbn[i];
       if (i === 9 && digit === 'X') {
         digit = 10;
       }
