@@ -4,7 +4,7 @@ import Contenticon from './contenticon/contenticon'
 
 function Header (props){
     const tabs = props.Tabs
-    const profileInfo = props.profileInfo
+    const profileInfo = props.content
     function selectView(event) {
         props.setSelectedView(event.target.value) 
     }
