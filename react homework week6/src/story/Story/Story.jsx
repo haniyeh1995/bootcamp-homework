@@ -1,4 +1,4 @@
-import './Story.css'
+import './showstory.css'
 
 function Story(props) {
     function showStory(event) {
