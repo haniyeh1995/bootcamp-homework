@@ -13,7 +13,7 @@ function OurFeature (props){
 }
 
 OurFeature.propTypes ={
-    feature: PropTypes.string.isRequired,
+    feature: PropTypes.object.isRequired,
 }
 
 export default OurFeature

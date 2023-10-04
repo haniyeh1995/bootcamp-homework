@@ -12,6 +12,7 @@ import productimg9 from '../Public/productimg6.jfif'
 import componenet7 from "../Public/Untitled.png"
 import Subscribe from "../Home/Subscribe";
 import { useState } from "react";
+import ellipse from '../Public/Ellipse 10.png'
 
 function Menu(props) {
   const searchInput = props.searchInput
@@ -27,6 +28,12 @@ function Menu(props) {
     { img: productimg9, title: "Green Salad", rate: "4.9", price: "15.00" },
   ];
 
+  const cardInfo = [
+    { img: ellipse, title: "Today 10:00am - 10:00pm", description: "Working time" },
+    { img: ellipse, title: "Washington, D.C., DC,USA", description: "Our Location" },
+    { img: ellipse, title: "+0123 456 7891", description: "Phone Number" },
+ ];
+
   const [productsCount, setProductsCount] = useState(9)
 
   const visibleProducts = Products.filter((product) => { return product.title.toLowerCase().includes(searchInput.toLowerCase()) }
@@ -36,7 +43,7 @@ function Menu(props) {
 
   return (
     <>
-      <div className="products-container padding-10vw">
+      <div className="products-container padding">
         <div className="grid-list  padd-top-4vw ">
           {visibleProducts.map(
             (product, index) => {
@@ -53,7 +60,12 @@ function Menu(props) {
           </a>
         </div>
         <div className="Menu-info">
-          <Information />
+          {cardInfo.map((cardInfo, index) => {
+            return (
+              <Information key={index} cardInfo={cardInfo} />
+            )
+          }
+          )}
         </div>
         <div className="subscribe">
           <Subscribe />

@@ -27,6 +27,6 @@ function Product(props) {
 }
 
 Product.propTypes = {
-    product: PropTypes.string.isRequired,
+    product: PropTypes.object.isRequired,
 }
 export default Product

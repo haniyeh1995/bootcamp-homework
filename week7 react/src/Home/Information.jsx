@@ -14,7 +14,7 @@ function Information(prop) {
 }
 
 Information.propTypes = {
-    cardInfo: PropTypes.string.isRequired,
+    cardInfo: PropTypes.object.isRequired,
 }
 
 
