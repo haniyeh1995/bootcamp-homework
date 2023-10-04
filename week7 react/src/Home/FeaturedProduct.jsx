@@ -57,7 +57,7 @@ function FeaturedProduct(prop) {
     )}
 
 FeaturedProduct.propTypes = {
-  product:PropTypes.string.isRequired,
+  product:PropTypes.object.isRequired,
 }
 
 export default FeaturedProduct

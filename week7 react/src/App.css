@@ -124,6 +124,7 @@ footer ul {
   display: flex;
   align-items: start;
   height: 800px;
+
   @media (max-width:1600px) {
     gap: 6.5vw;
   }
@@ -134,6 +135,7 @@ footer ul {
   display: flex;
   flex-direction: column;
   flex-grow: 0;
+
   @media (max-width:1600px) {
     max-width: 40vw;
   }
@@ -164,6 +166,7 @@ footer ul {
   font-weight: 700;
   margin: 2.5vw 0;
   flex-grow: 0.5;
+
   @media (max-width:1500px) {
     font-size: 6vw;
   }
@@ -178,8 +181,10 @@ footer ul {
   font-size: 18px;
   font-weight: 500;
   flex-grow: 1;
+
   @media (max-width:1500px) {
     font-size: 1vw;
+
     @media (max-width:1250px) {
       font-size: 1.5vw;
     }
@@ -220,6 +225,7 @@ footer ul {
   margin-top: 200px;
   position: relative;
   flex-shrink: 0;
+
   @media (max-width:1600px) {
     display: none;
   }
@@ -245,6 +251,7 @@ footer ul {
   padding: 0 1vw;
   gap: 1vw;
   grid-template-columns: 1fr 1fr;
+
   @media (max-width:1600px) {
     padding-left: 6.5vw;
   }
@@ -301,6 +308,7 @@ footer ul {
   height: 100%;
   width: 20vw;
   z-index: -2;
+
   @media (max-width:1600px) {
     width: 28vw;
   }
@@ -322,6 +330,7 @@ footer ul {
   align-items: center;
   padding: 50px 5vw;
   width: 33%;
+
   @media (max-width:1400px) {
     padding: 50px 1vw;
   }
@@ -391,9 +400,9 @@ footer ul {
   padding-bottom: 1vw;
 }
 
-.product-row{
+.product-row {
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
 }
 
 .product-card>img {
@@ -675,5 +684,11 @@ div.padd-top-4vw {
 }
 
 .Menu-info {
+  display: flex;
+  justify-content: space-between;
   margin: 7vw 0;
+  border-radius: 50px;
+  background: var(--White, #FFF);
+  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.05);
+  padding: 25px 0;
 }

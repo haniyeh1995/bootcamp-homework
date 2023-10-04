@@ -62,6 +62,6 @@ function Testimonials(props) {
 }
 
 Testimonials.propTypes = {
-    comment: PropTypes.string.isRequired,
+    comment: PropTypes.object.isRequired,
 }
 export default Testimonials
