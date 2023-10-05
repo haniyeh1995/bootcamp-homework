@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import Information from "../Home/Information";
 import Product from "../Home/Product";
 import productimg1 from '../Public/productimg1.jfif'
@@ -73,6 +74,9 @@ function Menu(props) {
       </div>
     </>
   );
+}
+Menu.propTypes = {
+  searchInput: PropTypes.string.isRequired,
 }
 
 export default Menu;
